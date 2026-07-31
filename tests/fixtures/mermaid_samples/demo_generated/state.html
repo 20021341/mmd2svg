@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>State</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Geist', system-ui, sans-serif;
+      background: #f5f5f5;
+      color: #2d3142;
+      min-height: 100vh;
+      min-width: 100vw;
+      width: fit-content;
+      height: fit-content;
+      padding: 3rem 2rem;
+    }
+    .frame { width: fit-content; }
+    .eyebrow {
+      font-family: 'Geist Mono', ui-monospace, monospace;
+      font-size: 0.66rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #4f5d75;
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(1.5rem, 2.4vw + 0.75rem, 2rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+    }
+    svg { display: block; width: 1632px; height: 236px; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <p class="eyebrow">State · mmd2svg</p>
+    <h1>State</h1>
+    <svg viewBox="0 0 1632 236" width="1632" height="236" xmlns="http://www.w3.org/2000/svg"><defs><marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#4f5d75"/></marker><marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#eb6c36"/></marker><marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#2e5aa8"/></marker></defs><rect width="100%" height="100%" fill="#f5f5f5"/><path d="M 112 140 L 122.0 140.0 Q 128.0 140.0 134.0 140.0 L 214.0 140.0 Q 220.0 140.0 226.0 140.0 L 236 140" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/><path d="M 376 140 L 386.0 140.0 Q 392.0 140.0 398.0 140.0 L 418.0 140.0 Q 424.0 140.0 430.0 140.0 L 440 140" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/><rect x="390" y="120" width="36" height="12" rx="2" fill="#f5f5f5"/><text x="408" y="129" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">submit</text><path d="M 580 140 L 590.0 140.0 Q 596.0 140.0 602.0 140.0 L 622.0 140.0 Q 628.0 140.0 634.0 140.0 L 644 140" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/><rect x="594" y="120" width="36" height="12" rx="2" fill="#f5f5f5"/><text x="612" y="129" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">assign</text><path d="M 784 140 L 794.0 140.0 Q 800.0 140.0 800.0 134.0 L 800.0 106.0 Q 800.0 100.0 806.0 100.0 L 826.0 100.0 Q 832.0 100.0 838.0 100.0 L 848 100" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/><rect x="771" y="80" width="90" height="12" rx="2" fill="#f5f5f5"/><text x="816" y="89" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">request_changes</text><path d="M 918 76 L 918.0 58.0 Q 918.0 52.0 912.0 52.0 L 312.0 52.0 Q 306.0 52.0 306.0 58.0 L 306 116" fill="none" stroke="#4f5d75" stroke-width="1" stroke-dasharray="5,4" marker-end="url(#arrow)"/><rect x="594" y="32" width="36" height="12" rx="2" fill="#f5f5f5"/><text x="612" y="41" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">revise</text><path d="M 784 140 L 794.0 140.0 Q 800.0 140.0 800.0 146.0 L 800.0 174.0 Q 800.0 180.0 806.0 180.0 L 826.0 180.0 Q 832.0 180.0 838.0 180.0 L 848 180" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/><rect x="795" y="160" width="42" height="12" rx="2" fill="#f5f5f5"/><text x="816" y="169" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">approve</text><path d="M 988 180 L 998.0 180.0 Q 1004.0 180.0 1004.0 174.0 L 1004.0 146.0 Q 1004.0 140.0 1010.0 140.0 L 1030.0 140.0 Q 1036.0 140.0 1042.0 140.0 L 1052 140" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/><rect x="1002" y="120" width="36" height="12" rx="2" fill="#f5f5f5"/><text x="1020" y="129" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">deploy</text><path d="M 1192 140 L 1202.0 140.0 Q 1208.0 140.0 1208.0 134.0 L 1208.0 106.0 Q 1208.0 100.0 1214.0 100.0 L 1234.0 100.0 Q 1240.0 100.0 1246.0 100.0 L 1256 100" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/><rect x="1209" y="80" width="30" height="12" rx="2" fill="#f5f5f5"/><text x="1224" y="89" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">error</text><path d="M 1326 76 L 1326.0 38.0 Q 1326.0 32.0 1320.0 32.0 L 516.0 32.0 Q 510.0 32.0 510.0 38.0 L 510 116" fill="none" stroke="#4f5d75" stroke-width="1" stroke-dasharray="5,4" marker-end="url(#arrow)"/><rect x="903" y="12" width="30" height="12" rx="2" fill="#f5f5f5"/><text x="918" y="21" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">retry</text><path d="M 1192 140 L 1202.0 140.0 Q 1208.0 140.0 1208.0 146.0 L 1208.0 174.0 Q 1208.0 180.0 1214.0 180.0 L 1234.0 180.0 Q 1240.0 180.0 1246.0 180.0 L 1256 180" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/><rect x="1203" y="160" width="42" height="12" rx="2" fill="#f5f5f5"/><text x="1224" y="169" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">success</text><path d="M 1396 180 L 1406.0 180.0 Q 1412.0 180.0 1412.0 174.0 L 1412.0 106.0 Q 1412.0 100.0 1418.0 100.0 L 1438.0 100.0 Q 1444.0 100.0 1450.0 100.0 L 1460 100" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/><rect x="1413" y="80" width="30" height="12" rx="2" fill="#f5f5f5"/><text x="1428" y="89" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">pause</text><path d="M 1530 124 L 1530.0 134.0 Q 1530.0 140.0 1524.0 140.0 L 1332.0 140.0 Q 1326.0 140.0 1326.0 146.0 L 1326 156" fill="none" stroke="#4f5d75" stroke-width="1" stroke-dasharray="5,4" marker-end="url(#arrow)"/><rect x="1410" y="120" width="36" height="12" rx="2" fill="#f5f5f5"/><text x="1428" y="129" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.06em">resume</text><path d="M 1396 180 L 1406.0 180.0 Q 1412.0 180.0 1418.0 180.0 L 1498.0 180.0 Q 1504.0 180.0 1510.0 180.0 L 1520 180" fill="none" stroke="#4f5d75" stroke-width="1" marker-end="url(#arrow)"/><circle cx="102" cy="140" r="6" fill="#2d3142"/><rect x="236" y="116" width="140" height="48" rx="8" fill="#ffffff" stroke="#2d3142" stroke-width="1"/><text x="306" y="144" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Draft</text><rect x="440" y="116" width="140" height="48" rx="8" fill="#ffffff" stroke="#2d3142" stroke-width="1"/><text x="510" y="144" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">PendingReview</text><rect x="644" y="116" width="140" height="48" rx="8" fill="#ffffff" stroke="#2d3142" stroke-width="1"/><text x="714" y="144" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">InReview</text><rect x="848" y="76" width="140" height="48" rx="8" fill="#ffffff" stroke="#2d3142" stroke-width="1"/><text x="918" y="104" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">ChangesRequested</text><rect x="848" y="156" width="140" height="48" rx="8" fill="#ffffff" stroke="#2d3142" stroke-width="1"/><text x="918" y="184" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Approved</text><rect x="1052" y="116" width="140" height="48" rx="8" fill="#ffffff" stroke="#2d3142" stroke-width="1"/><text x="1122" y="144" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Deploying</text><rect x="1256" y="76" width="140" height="48" rx="8" fill="#ffffff" stroke="#2d3142" stroke-width="1"/><text x="1326" y="104" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Failed</text><rect x="1256" y="156" width="140" height="48" rx="8" fill="#ffffff" stroke="#2d3142" stroke-width="1"/><text x="1326" y="184" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Active</text><rect x="1460" y="76" width="140" height="48" rx="8" fill="#ffffff" stroke="#2d3142" stroke-width="1"/><text x="1530" y="104" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif" text-anchor="middle">Suspended</text><circle cx="1530" cy="180" r="8" fill="none" stroke="#2d3142" stroke-width="1.2"/><circle cx="1530" cy="180" r="5" fill="#2d3142"/></svg>
+  </div>
+</body>
+</html>

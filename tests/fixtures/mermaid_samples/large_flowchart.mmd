@@ -1,0 +1,15 @@
+flowchart TD
+  A([Start]) --> B{Check input}
+  B -->|Valid| C[Validate]
+  B -->|Invalid| D[Error]
+  C --> E{Need auth?}
+  E -->|Yes| F[Login]
+  E -->|No| G[Process]
+  F --> G
+  G --> H{Result?}
+  H -->|OK| I[Show result]
+  H -->|Retry| J[Retry]
+  H -->|Fail| D
+  J --> G
+  I --> K([End])
+  D --> K

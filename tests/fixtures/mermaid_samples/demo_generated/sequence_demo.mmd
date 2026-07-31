@@ -1,0 +1,18 @@
+---
+title: "E-Commerce Checkout & Payment Authentication Flow"
+---
+sequenceDiagram
+  participant Client App
+  participant Auth Service
+  participant Database
+  participant Payment Gateway
+  Client App->>Auth Service: Login Credentials
+  Auth Service->>Database: Query User Profile
+  Database-->>Auth Service: Profile Data
+  Auth Service-->>Client App: JWT Access Token
+  Client App->>Payment Gateway: Initiate Checkout
+  Payment Gateway->>Auth Service: Validate Token Session
+  Auth Service-->>Payment Gateway: Session Valid
+  Payment Gateway->>Database: Record Transaction
+  Database-->>Payment Gateway: Transaction Confirmed
+  Payment Gateway-->>Client App: Payment Successful

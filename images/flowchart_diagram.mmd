@@ -1,0 +1,14 @@
+---
+title: "Order Processing & Inventory Routing Flow"
+---
+flowchart LR
+  Client[Client Request] --> Gateway{API Gateway}
+  Gateway -->|Auth Valid| Auth[Auth Service]
+  Gateway -->|Invalid| Reject[Reject Request]
+  Auth --> Engine[Processing Engine]
+  Engine --> Inventory{Check Stock}
+  Inventory -->|In Stock| Fulfill[Fulfill Order]
+  Inventory -->|Out of Stock| Backorder[Backorder]
+  Backorder -->|Retry| Engine
+  Fulfill --> Ship((Ship Package))
+  Backorder --> Notify((Notify User))

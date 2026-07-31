@@ -1,0 +1,23 @@
+[project]
+name = "mmd2svg"
+version = "0.1.0"
+description = "Convert Mermaid diagrams to SVG/HTML/PNG using a fixed editorial style guide"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "playwright>=1.40.0",
+    "pillow>=10.0.0",
+]
+
+[project.scripts]
+mmd2svg = "mmd2svg.cli:main"
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.164.0",
+    "pytest>=9.1.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,0 +1,13 @@
+---
+title: "User Order Lifecycle & Fulfillment States"
+---
+stateDiagram-v2
+  [*] --> Idle
+  Idle --> Authentic : login
+  Authentic --> Processing : submit_order
+  Processing --> StockCheck : validate
+  StockCheck --> Shipping : success
+  StockCheck --> Cancelled : failed
+  Shipping --> Completed : delivered
+  Completed --> [*]
+  Cancelled --> [*]
