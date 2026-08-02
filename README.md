@@ -38,6 +38,9 @@ uv sync
 uv run pytest tests/
 ```
 
+See [`docs/DESIGN.md`](docs/DESIGN.md) for the full architecture design
+(pipeline stages, base classes, layout engine).
+
 ### Adding support for a new diagram type
 
 1. Decide whether the new type is formulaic (position derivable directly from the input, e.g. gantt) or graph-based (position must be inferred from edges, e.g. flowchart).
