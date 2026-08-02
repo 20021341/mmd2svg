@@ -47,8 +47,9 @@ uv sync
 uv run pytest tests/
 ```
 
-See [`docs/DESIGN.md`](docs/DESIGN.md) for the full architecture design
-(pipeline stages, base classes, layout engine).
+See [`DESIGN.md`](DESIGN.md) for the full architecture design (pipeline
+stages, base classes, layout engine). A Vietnamese version is available at
+[`DESIGN.vi.md`](DESIGN.vi.md).
 
 ### Adding support for a new diagram type
 
