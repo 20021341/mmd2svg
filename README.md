@@ -11,6 +11,8 @@ Convert Mermaid diagram text to SVG/HTML/PNG using a single fixed editorial styl
 ## Installation
 
 ```bash
+git clone https://github.com/20021341/mmd2svg.git
+cd mmd2svg
 pip install -e .
 ```
 
@@ -18,6 +20,13 @@ Or install directly from a prebuilt wheel in `dist/`:
 
 ```bash
 pip install dist/mmd2svg-0.1.0-py3-none-any.whl
+```
+
+PNG output additionally needs the Chromium browser binary used by Playwright
+(HTML and SVG output do not need this step):
+
+```bash
+playwright install --with-deps chromium
 ```
 
 ## Usage
