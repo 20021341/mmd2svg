@@ -16,8 +16,7 @@ cd mmd2svg
 pip install -e .
 ```
 
-Or build a wheel yourself and install from it (`dist/` is gitignored, so it
-won't exist right after cloning; this requires `uv`):
+Or install directly from a prebuilt wheel in `dist/`:
 
 ```bash
 uv build
