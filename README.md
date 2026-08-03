@@ -19,7 +19,6 @@ pip install -e .
 Or install directly from a prebuilt wheel in `dist/`:
 
 ```bash
-uv build
 pip install dist/mmd2svg-0.1.0-py3-none-any.whl
 ```
 
