@@ -16,9 +16,11 @@ cd mmd2svg
 pip install -e .
 ```
 
-Or install directly from a prebuilt wheel in `dist/`:
+Or build a wheel yourself and install from it (`dist/` is gitignored, so it
+won't exist right after cloning; this requires `uv`):
 
 ```bash
+uv build
 pip install dist/mmd2svg-0.1.0-py3-none-any.whl
 ```
 
